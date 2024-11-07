@@ -1,4 +1,4 @@
-# CrewAI
+# CrewAI: Introducing agentic ai
 
 CrewAI is a project that simulates an interactive Q&A system using Crew AI and Langraph, where a student agent asks popular questions about generative AI, and a teacher agent provides automated responses. The system uses the Gemini API as the backend large language model.
 

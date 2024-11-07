@@ -1,4 +1,3 @@
-
 import os
 from dotenv import load_dotenv
 from litellm import completion
@@ -6,11 +5,11 @@ from crewai import Task, Crew, Agent, LLM
 from langchain_google_genai import ChatGoogleGenerativeAI
 from google.generativeai import configure, GenerativeModel
 
-
 load_dotenv()
 
 os.environ['GEMINI_API_KEY'] = os.getenv("GEMINI_API_KEY")
 
+## Setting up LLM
 llm=LLM(
     model="gemini/gemini-pro",
     verbose=True,
@@ -60,7 +59,6 @@ student_tasks = [
 ]
 
 ## Creating tasks for teacher agent
-
 teacher_tasks = [
     Task(
         description="Provide an answer to the student's question.",
